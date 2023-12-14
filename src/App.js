@@ -1,12 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import "./App.css";
 
 //! starting our app
 const App = () => {
   //* initializing the todos
-  const [todos, setTodos] = React.useState([]);
+  const [todos, setTodos] = useState([]);
 
-  const [todoEditing, setTodoEditing] = React.useState(null);
+  const [todoEditing, setTodoEditing] = useState(null);
 
   //* for getting todos in local storage
   useEffect(() => {
